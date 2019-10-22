@@ -8,6 +8,10 @@
                 fill="#ffc600">
             </path>
         </svg>
+        <h3>Toggle Rays:</h3>
+        <input name="rays" type="range" min="4" max="60" v-model="rays" />
+
+
     </section>
 </template>
 
@@ -19,7 +23,7 @@ import { lineRadial } from 'd3-shape';
         data() {
             return {
                 outerRadius: 200,
-                rays: 5
+                rays: 8
             }
         },
 
